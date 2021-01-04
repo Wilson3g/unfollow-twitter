@@ -16,14 +16,14 @@ Aplicação que realiza o unfollow em usuário do twitter que não te seguem
 <strong>Atenção! Todos os comandos abaixo são para Linux</strong>
 
 1) Faça o clone do projeto<br>
-1.2 ```$ git clone nome_do_repositório```<br>
+- ```git clone https://github.com/Wilson3g/unfollow-twitter.git```<br>
 
 2) Crie e ative uma virtual env usando python3<br>
-2.1 ```$ python3 -m venv nome_da_sua_env```<br>
-2.2 ```$ . nome_da_sua_env/bin/activate```<br>
+- ```python3 -m venv nome_da_sua_env```<br>
+- ```. nome_da_sua_env/bin/activate```<br>
 
 3) Instale os pacotes necessários para rodar o projeto<br>
-3.1 ```$ pip install -r requirements```<br>
+- ```pip install -r requirements```<br>
 
 4) No arquivo twitter.py adicione as suas credenciais do twitter<br>
 
