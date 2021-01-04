@@ -1,3 +1,7 @@
+import time
+import sys
+import tweepy
+
 class Twitter():
 
     def auth(self):
@@ -23,7 +27,7 @@ class Twitter():
 
         return friends
 
-    def followers_following_dict(self):
+    def followers_following_dict(self, followers, friends):
         follower_dict = {}
         for follower in followers:
             follower_dict[follower.id] = follower
@@ -34,11 +38,12 @@ class Twitter():
 
         return follower_dict, friend_dict
 
-    def users_who_no_following(self, follower):
-        non_friends = [friend for friend in friends if friend.id not in follower]
+    def users_who_no_following(self, friends, follower_dict):
+        non_friends = [friend for friend in friends if friend.id not in follower_dict]
         return non_friends
 
-    def unfollow_users(self):
+    def unfollow_users(self, non_friends):
+        api = self.auth()
         print('processing...')
         for non_friend in non_friends:
             print(f'unfollow user {non_friend.screen_name}')
