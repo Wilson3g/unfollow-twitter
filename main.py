@@ -14,6 +14,6 @@ if __name__ == "__main__":
 
     print(f"{len(non_friends)} users who don't follow you")
 
-    # t.unfollow_users(non_friends)
+    t.unfollow_users(non_friends)
 
     print('done')
