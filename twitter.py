@@ -5,8 +5,8 @@ import tweepy
 class Twitter():
 
     def auth(self):
-        auth = tweepy.OAuthHandler('wO1ZWebiMTucsm9UUsvGFEY4r', 'izJq8GMrjEz7n0vU6BkKUd3laoMtvNeyf7uZKmyxYW8zt8zwxw')
-        auth.set_access_token('1306019023583412224-f51AXW1FvLhmsR8a33MPmqTCVrLKHG', 'qH0aiESCiFGDNGIjMwnjhUNYuvsEn1lvhl8A3GjgEWlpc')
+        auth = tweepy.OAuthHandler('YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET')
+        auth.set_access_token('YOUR_ACCESS_TOKEN', 'YOUR_ACCESS_TOKEN_SECRET')
         api=tweepy.API(auth_handler=auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
         return api
