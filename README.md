@@ -4,26 +4,28 @@
 Aplicação que realiza o unfollow em usuário do twitter que não te seguem
 
 ## Funcionalidade:
-- Realizar o unfollow de usuários no twitter seguindo os passos descritos abaixo.
-1 - Faz login na api do Twitter usando as credenciais de acesso do usuário.
-2 - Encontrar todos os seguidores e pessoas que o usuário segue.
-3 - Cria dpos dicionário, um com com todos os seguidores e outro com os não seguidores.
-4 - Faz uma comparação entre os dois dicionário e retorna os ids diferentes (ids diferente são usuário que não se encontram nos dois dicionário, logo não são seguidores).
-5- Realiza o unfollow usando os ids recuperados no passo 4.
+- Realizar o unfollow de usuários no twitter seguindo os passos descritos abaixo. <br>
+1 - Faz login na api do Twitter usando as credenciais de acesso do usuário.<br>
+2 - Encontrar todos os seguidores e pessoas que o usuário segue.<br>
+3 - Cria dpos dicionário, um com com todos os seguidores e outro com os não seguidores.<br>
+4 - Faz uma comparação entre os dois dicionário e retorna os ids diferentes (ids diferente são usuário que não se encontram nos dois dicionário, logo não são seguidores).<br>
+5- Realiza o unfollow usando os ids recuperados no passo 4.<br>
 
 ## Instalação
 
-1) Faça o clone do projeto
-1.2 - git clone nome_do_repositório
+<strong>Atenção! Todos os comandos abaixo são para Linux</strong>
 
-2) Crie e ative uma virtual env usando python3
-2.1 - python3 -m venv nome_da_sua_env
-2.2 - . nome_da_sua_env/bin/activate
+1) Faça o clone do projeto<br>
+1.2 ```$ git clone nome_do_repositório```<br>
 
-3) Instale os pacotes necessários para rodar o projeto
-3.1 - pip install -r requirements
+2) Crie e ative uma virtual env usando python3<br>
+2.1 ```$ python3 -m venv nome_da_sua_env```<br>
+2.2 ```$ . nome_da_sua_env/bin/activate```<br>
 
-4) No arquivo twitter.py adicione as suas credenciais do twitter
+3) Instale os pacotes necessários para rodar o projeto<br>
+3.1 ```$ pip install -r requirements```<br>
 
-5) Execute o projeto com python main.py
+4) No arquivo twitter.py adicione as suas credenciais do twitter<br>
+
+5) Execute o projeto com ```$ python main.py```<br>
 
