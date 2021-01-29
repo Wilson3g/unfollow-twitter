@@ -35,7 +35,8 @@ Aplicação que realiza o unfollow em usuário do twitter que não te segue
 5) Execute<br>
 - ```$ npm init```<br>
 
-6) ```$ npm install serverless-python-requirements```<br>
+6) Execute
+- ```$ npm install serverless-python-requirements```<br>
 
 7) Para rodar o projeto localmente execute<br>
 - ```$ serverless invoke local -f main```<br>
