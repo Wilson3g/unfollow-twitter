@@ -1,6 +1,8 @@
 # Distribution / packaging
 .Python
 env/
+venv/
+.env
 build/
 develop-eggs/
 dist/
